@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>My Assignment</title>
+    <style>
+        #board{
+            background-color: blueviolet;
+            color: white;
+            width: 300px;
+            height: 300px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>DAY 3</h1>
+
+    <input type="text" id="a" placeholder="name" />
+    <input type="text" id="b" placeholder="city"/>
+
+    <button onclick="display()">click me</button>
+
+    <div id="board"></div>
+
+    <script>
+
+        function display(){
+
+        let name = document.querySelector('#a').value;
+        let city = document.querySelector('#b').value;
+
+        document.querySelector('#board').innerHTML = `<h1>  ${name} , ${city}</h1>`;
+
+        }
+
+    </script>
+</body>
+</html>
